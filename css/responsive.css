@@ -1,0 +1,203 @@
+/* laptop/desktop 1200px */
+
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+
+/* normal desktop */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .main-nav nav ul li {
+        margin-right: 20px;
+    }
+    .hero-text h1 {
+        font-size: 46px;
+    }
+    .abt-img {
+        display: none;
+    }
+    .section-title h1 {
+        font-size: 45px;
+    }
+    .port h1 {
+        font-size: 38px;
+    }
+    .group-btn button {
+        padding: 19px 19px;
+        font-size: 11px;
+        margin-right: 6px;
+    }
+    .team-avatar {
+        text-align: -moz-center;
+    }
+    .abt-title h1 {
+        font-size: 45px;
+    }
+    .footer-title h3 {
+        font-size: 14px;
+    }
+    .footer-form form button {
+        top: 78%;
+    }
+}
+
+
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mean-container {
+        width: 100%;
+    }
+    .hero-utility {
+        padding: 150px 65px;
+    }
+    .hero-text h1,
+    .two h1 {
+        font-size: 41px;
+        padding-right: 25%;
+    }
+    .hero-caption p,
+    .two p {
+        padding-right: 27%;
+    }
+    .section-title h1 {
+        font-size: 40px;
+    }
+    .group-btn {
+        margin-top: 30px;
+    }
+    .group-btn button {
+        font-size: 12px;
+    }
+    .footer-title h3 {
+        font-size: 14px;
+    }
+}
+
+
+/* small mobile */
+
+@media (max-width: 767px) {
+    .mean-container {
+        width: 100%;
+    }
+    .hero-utility {
+        padding: 90px 25px;
+    }
+    .logo h5 {
+        font-size: 17px;
+    }
+    .logo h5 span {
+        font-size: 28px;
+    }
+    .hero-text h1,
+    .two h1 {
+        font-size: 30px;
+        padding-right: 2%;
+    }
+    .hero-text h5 {
+        font-size: 15px;
+    }
+    .single-slider-one,
+    .single-slider-two {
+        height: 670px;
+    }
+    .section-title h1 {
+        font-size: 32px;
+    }
+    .group-btn {
+        margin-top: 30px;
+    }
+    .group-btn button {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .portfolio-content {
+        top: 55%;
+    }
+    .service-area {
+        padding: 0;
+    }
+    .team-avatar {
+        text-align: -moz-center;
+    }
+    .team-avatar img {
+        width: 100%;
+    }
+    .footer-top {
+        padding: 45px 0;
+    }
+    .footer-title h3 {
+        color: #fff;
+        font-size: 18px;
+    }
+    .footer-social {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
+
+
+/* large mobile */
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+    .mean-container {
+        width: 100%;
+    }
+    .logo h5 {
+        font-size: 17px;
+    }
+    .logo h5 span {
+        font-size: 28px;
+    }
+    .hero-utility {
+        padding: 150px 55px;
+    }
+    .hero-text h1,
+    .two h1 {
+        font-size: 41px;
+        padding-right: 25%;
+    }
+    .hero-text h1,
+    .two h1 {
+        font-size: 40px;
+        padding-right: 2%;
+    }
+    .single-slider-one,
+    .single-slider-two {
+        height: 570px;
+    }
+    .abt-img img {
+        width: 100%;
+    }
+    .abt-title h1 {
+        font-size: 36px;
+    }
+    .section-title h1 {
+        font-size: 32px;
+    }
+    .group-btn {
+        margin-top: 30px;
+    }
+    .group-btn button {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .portfolio-content {
+        left: 11%;
+    }
+    .cta-area {
+        padding: 89px 54px;
+    }
+    .team-avatar {
+        text-align: -moz-center;
+    }
+    .team-avatar img {
+        width: 85%;
+    }
+    .abt-title h1 {
+        font-size: 29px;
+    }
+    .end {
+        justify-content: start;
+    }
+}
