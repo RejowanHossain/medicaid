@@ -3,11 +3,11 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Doctors Chamber</title>
+    <title>MedicAid</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="img/logo.png" type="image/gif">
+    <link rel="icon" href="img/favicon.png" type="image/gif">
 
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -81,6 +81,11 @@
                     </a>
                   </li>
 
+                  <li class="profile">
+                    <a href="profile.html">
+                      <i class="fas fa-user"></i>
+                    </a>
+                  </li>
                   <li class="search" id="searchBtn">
                     <i class="fas fa-search"></i>
                   </li>
@@ -105,11 +110,11 @@
                   <div class="hero-text">
                     <div class="hero-caption">
                       <h5>We aim make your life better</h5>
-                      <h1>Best Doctors & Quality Treatment</h1>
+                      <h1>Best Doctors & <span>Quality</span> Treatment</h1>
                       <p>MedicAid Are A Medical And Health Department Provider Institutions. Suitable For Healthcare, Medical, Doctor, Dental, Dentist, Pharmacy, Health And Any Related Medical Care Field.</p>
                     </div>
                     <div class="header-menu-cta d-flex align-items-center">
-                      <a href="#appointment.html" class="button">Get An Appointment</a>
+                      <a href="doctor.html" class="button">Find a Doctor</a>
                       <a href="https://www.youtube.com/watch?v=tK4Q85BNGto" class="pulse popup-hero" data-lity="">
                         <i class="fas fa-play"></i>
                       </a>
@@ -122,15 +127,15 @@
           <div class="single-slider-two hero-utility">
             <div class="container">
               <div class="row">
-                <div class="col-xl-7">
+                <div class="col-xl-7 col-lg-8">
                   <div class="hero-text">
                     <div class="hero-caption two">
                       <h5>We aim make your life better</h5>
-                      <h1>Best Doctors & Quality Treatment</h1>
+                      <h1>Best Doctors & <span>Quality</span> Treatment</h1>
                       <p>MedicAid Are A Medical And Health Department Provider Institutions. Suitable For Healthcare, Medical, Doctor, Dental, Dentist, Pharmacy, Health And Any Related Medical Care Field.</p>
                     </div>
                     <div class="header-menu-cta d-flex align-items-center">
-                      <a href="#appointment" class="button">Get An Appointment</a>
+                      <a href="doctor.html" class="button">Find a Doctor</a>
                       <a href="https://www.youtube.com/watch?v=tK4Q85BNGto" class="pulse popup-hero" data-lity="">
                         <i class="fas fa-play"></i>
                       </a>
@@ -160,31 +165,47 @@
                     <div class="quote-item">
                       <span class="lable">name*</span>
                       <i class="fas fa-file-signature"></i>
-                      <input type="text" name="name" placeholder="Name">
+                      <input type="text" name="name" placeholder="Ex: John Smith">
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="quote-item">
                       <span class="lable">Email*</span>
                       <i class="fas fa-envelope"></i>
-                      <input type="email" name="email" placeholder="Email">
+                      <input type="email" name="email" placeholder="Ex: smith@gmail.com">
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="quote-item">
                       <span class="lable">Phone*</span>
                       <i class="fas fa-phone"></i>
-                      <input type="tel" name="tel" placeholder="Phone">
+                      <input type="tel" name="tel" placeholder="Ex: 998 021 2154">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="quote-item">
+                      <span class="lable">Location*</span>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <input type="text" name="email" placeholder="Ex: 142, park street, new york">
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="quote-item">
                       <span class="lable">Doctors*</span>
-                      <i class="fas fa-user"></i>
-                      <input type="text" name="name" placeholder="Doctors">
+                      <select class="selectStyle">
+                        <option value="0">Doctors</option>
+                        <option value="1">Dr. Stephen Hawkings</option>
+                        <option value="2">Dr. Phill Collins</option>
+                        <option value="3">Dr. Carl Segan</option>
+                        <option value="4">Dr. James Hetfield</option>
+                        <option value="5">Dr. Bob Hammett</option>
+                        <option value="6">Dr. Dave Ellefson</option>
+                        <option value="6">Dr. Scot Ian</option>
+                        <option value="6">Dr. Nick Scott</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-lg-6">
                     <div class="quote-item">
                       <span class="lable">Departments*</span>
                       <select class="selectStyle">
@@ -200,14 +221,14 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-lg-6">
                     <div class="quote-item">
                       <span class="lable">Select Date*</span>
                       <i class="fas fa-calendar-day"></i>
                       <input type="date" data-toggle="datepicker" placeholder="Select Date">
                     </div>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-lg-6">
                     <div class="quote-item">
                       <span class="lable">Select Time*</span>
                       <select class="selectStyle time">
@@ -255,31 +276,52 @@
     <!-- About area starts -->
     <section id="about">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-5 fix">
-            <div class="left-about">
-              <div class="abt-img">
-                <div class="abt-img-left">
-                  <img src="img/about_left.jpg" alt="people">
-                </div>
-                <div class="abt-img-right">
-                  <img src="img/about-right.jpg" alt="people">
-                </div>
-              </div>
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-5">
+            <div class="abt-img">
+              <img src="img/about-img.jpg" alt="doctor">
             </div>
           </div>
-          <div class="col-xl-6 col-lg-12">
+          <div class="col-xl-7 col-lg-7">
             <div class="right-about">
               <div class="abt-title">
-                <h5>About Us</h5>
-                <h1>Trusted by clients <span>.</span> </h1>
+                <h5>About Medicaid</h5>
+                <h2>Whatever Your Health Needs We Are Here to Help<span>.</span> </h2>
               </div>
               <div class="abt-content">
-                <p>We build professional, clean websites and web applications that are planned and designed with project’s objectives in mind. Our web design experts does everything in-house and our team of experts is armed with the skills to needed provide
-                  services throughout any stage of a web development project. We offer our services as a complete package.</p>
-                <p class="abt-quote">
-                  At IIdea Informatics, we always look for innovative solutions to our client’s problems.
-                </p>
+                <p>MedDoctors Are A Medical And Health Department Provider Institutions. Suitable For Healthcare, Medical, Doctor, Dental, Dentist, Pharmacy, Health And Any Related Medical Care Field.</p>
+
+                <div class="abt-list">
+                  <ul>
+                    <li>
+                      <i class="fas fa-check"></i>
+                      <span>Cras sit amet libero congu placerat dui ullamcorper lorem.</span>
+                    </li>
+
+                    <li>
+                      <i class="fas fa-check"></i>
+                      <span>Donec nec mauris mattis, ullamcorper erat dignissim dui.</span>
+                    </li>
+
+                    <li>
+                      <i class="fas fa-check"></i>
+                      <span>Integer vel ipsum et felis scelerisque tempus.</span>
+                    </li>
+
+                    <li>
+                      <i class="fas fa-check"></i>
+                      <span>We are committed to providing healthcare service.</span>
+                    </li>
+
+                    <li>
+                      <i class="fas fa-check"></i>
+                      <span>Really know the true needs and expectations of patients.</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="learn-more">
+                  <a class="button" href="appointment.html">Learn More</a>
+                </div>
               </div>
             </div>
           </div>

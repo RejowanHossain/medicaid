@@ -68,7 +68,7 @@ $(document).ready(function() {
         dots: false,
         arrows: true,
         infinite: true,
-        speed: 500,
+        speed: 300,
         autoplay: true,
         fade: true,
         cssEase: 'linear',
