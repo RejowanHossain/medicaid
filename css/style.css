@@ -658,36 +658,14 @@ h5 {
     margin-bottom: 15px;
 }
 
-.service-link {
-    color: #f71735;
-    transition: .3s linear all;
-    font-weight: 600;
-}
-
-.service-link:hover {
-    color: #0b0c26;
-}
-
 
 /* service ends */
 
 
 /* portfolio starts */
 
-#portfolio {
+.schedule {
     padding: 120px 0;
-}
-
-.group-btn button {
-    color: #fff;
-    background: #f71735;
-    padding: 20px 25px;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 3px;
-    border: 0;
-    margin-right: 10px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .portfolio-single {
@@ -734,6 +712,88 @@ h5 {
 
 .space {
     margin-top: 60px;
+}
+
+.colorful-tab-wrapper {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.colorful-tab-wrapper::before {
+    color: #848E9F;
+    font-size: 80px;
+}
+
+.colorful-tab-menu {
+    background: rgba(43, 143, 229, 0.2);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#classes .colorful-tab-menu-item.active a {
+    background: #1A3D7D;
+    color: #fff;
+}
+
+#classes .colorful-tab-menu li a {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2B8FE5;
+    text-transform: uppercase;
+    padding: 15px 0;
+    transition: all linear 0.3s;
+}
+
+#classes .colorful-tab-menu li a:hover {
+    color: #fff;
+    background: #1A3D7D;
+}
+
+.colorful-tab-content ul {
+    overflow: hidden;
+}
+
+.colorful-tab-content .schedule-icon {
+    margin: 8px 0;
+}
+
+.colorful-tab-content ul li {
+    float: left;
+    width: 20%;
+    background: rgba(43, 143, 229, 0.2);
+    display: block;
+    text-align: center;
+    height: 228px;
+    border: 2.5px solid #fff;
+    box-sizing: border-box;
+    padding: 50px 5px 0 5px;
+    color: #848E9F;
+    transition: all linear 0.2s;
+}
+
+#classes .colorful-tab-container ul li:hover {
+    background: #2B8FE5;
+    color: #fff;
+    z-index: 9999999;
+}
+
+#classes .colorful-tab-container ul li:hover p {
+    color: #fff;
+}
+
+#classes .colorful-tab-container ul li p {
+    font-size: 16px;
+    color: #2B8FE5;
+}
+
+#classes .colorful-tab-container ul li i::before {
+    font-size: 50px;
+    margin-left: 0px;
+    padding: 5px 0;
 }
 
 

@@ -34,6 +34,12 @@ $(document).ready(function() {
         meanScreenWidth: '991',
     });
 
+    //classes tab with colorfull tab
+    $('#colorful').colorfulTab({
+        overlayColor: "#000",
+        overlayOpacity: ".6"
+    });
+
     //   preloadder
     $(window).on('load', function() {
         //$("#loading").delay(2000).fadeOut(500);
@@ -75,6 +81,8 @@ $(document).ready(function() {
         prevArrow: '<button type="button" class="slick-prev slick-arrow"><i class="fas fa-arrow-right"></i></button>',
         nextArrow: '<button type="button" class="slick-next slick-arrow"><i class="fas fa-arrow-left"></i></button>'
     });
+
+
     // team slider
     $('.team-slider').slick({
         dots: false,
@@ -119,23 +127,25 @@ $(document).ready(function() {
     });
 
 
-    // mixitup
-    var mixer = mixitup('.space');
 
-    //smooth scroll 
-    var $htmlbody = $('html,body');
-    $('.nav-item .nav-link').on('click', function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $htmlbody.animate({
-                    scrollTop: target.offset().top - 65
-                }, 1000);
-                return false;
-            }
-        }
-    });
+
+    // mixitup
+    // var mixer = mixitup('.space');
+
+    // //smooth scroll 
+    // var $htmlbody = $('html,body');
+    // $('.nav-item .nav-link').on('click', function() {
+    //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    //         var target = $(this.hash);
+    //         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    //         if (target.length) {
+    //             $htmlbody.animate({
+    //                 scrollTop: target.offset().top - 65
+    //             }, 1000);
+    //             return false;
+    //         }
+    //     }
+    // });
 
 
 });
