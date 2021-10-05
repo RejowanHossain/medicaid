@@ -35,10 +35,9 @@ $(document).ready(function() {
     });
 
     //classes tab with colorfull tab
-    $('#colorful').colorfulTab({
-        overlayColor: "#000",
-        overlayOpacity: ".6"
-    });
+    $('#colorful').colorfulTab();
+
+
 
     //   preloadder
     $(window).on('load', function() {
@@ -51,6 +50,8 @@ $(document).ready(function() {
     $(document).ready(function() {
         $('.selectStyle').niceSelect();
     });
+
+
     // scroll to top
     //Top to back
     $(".top-btm").click(function() {
@@ -126,26 +127,6 @@ $(document).ready(function() {
         ]
     });
 
-
-
-
-    // mixitup
-    // var mixer = mixitup('.space');
-
-    // //smooth scroll 
-    // var $htmlbody = $('html,body');
-    // $('.nav-item .nav-link').on('click', function() {
-    //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    //         var target = $(this.hash);
-    //         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    //         if (target.length) {
-    //             $htmlbody.animate({
-    //                 scrollTop: target.offset().top - 65
-    //             }, 1000);
-    //             return false;
-    //         }
-    //     }
-    // });
 
 
 });

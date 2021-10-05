@@ -662,7 +662,7 @@ h5 {
 /* service ends */
 
 
-/* portfolio starts */
+/* schedule starts */
 
 .schedule {
     padding: 120px 0 60px;
@@ -755,19 +755,49 @@ h5 {
 }
 
 
-/* portfolio ends */
+/* schedule ends */
 
 
-/* cta area starts */
+/* counter area starts */
 
-
-/* #cta {
-    padding: 120px 0;
-    background: url(../img/slider1.jpeg);
-    position: relative;
+.counter {
+    padding: 100px 0;
+    background: url('../img/counter-bg-2.png') no-repeat center center;
+    background-size: cover;
+    margin: 60px 0;
+    background-color: #1A3D7D;
 }
 
-#cta::before {
+.single-counter {
+    display: flex;
+    align-items: center;
+    background: #091D3E;
+    color: #fff;
+    padding: 40px 32px;
+    border-bottom: 3px solid #2B8FE5;
+}
+
+.counter-info h5 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.counter-info span {
+    font-weight: 600;
+}
+
+.counter-icon {
+    margin-right: 20px;
+}
+
+.counter-icon svg {
+    font-size: 62px;
+    color: #2B8FE5;
+}
+
+
+/* #cta::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -776,7 +806,7 @@ h5 {
     left: 0;
     background: #0b0c26;
     opacity: .5;
-}
+} */
 
 .white {
     color: #fff;
@@ -829,16 +859,16 @@ h5 {
     color: #fff;
     border-radius: 3px;
     border: none;
-} */
+}
 
 
-/* cta area ends */
+/* counter area ends */
 
 
 /* team starts */
 
 #team {
-    padding: 50px 0 60px;
+    padding: 60px 0 60px;
 }
 
 .team.style-16,
