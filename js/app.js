@@ -85,7 +85,7 @@ $(document).ready(function() {
 
 
     // team slider
-    $('.team-slider').slick({
+    $('.testimonial-slider').slick({
         dots: false,
         arrows: false,
         infinite: true,
@@ -93,7 +93,7 @@ $(document).ready(function() {
         speed: 300,
         // prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
         // nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [{
                 breakpoint: 1200,
@@ -106,14 +106,14 @@ $(document).ready(function() {
             {
                 breakpoint: 991,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             },
