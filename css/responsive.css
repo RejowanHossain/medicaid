@@ -6,7 +6,26 @@
 /* normal desktop */
 
 @media (min-width: 992px) and (max-width: 1200px) {
-    .main-nav nav ul li {
+    /* hero */
+    .hero-text h1 {
+        font-size: 48px;
+        margin-bottom: 18px;
+    }
+    /* about */
+    .right-about {
+        padding: 60px 38px;
+    }
+    /* counter */
+    .single-counter {
+        flex-direction: column;
+    }
+    .counter-icon {
+        margin-right: 0px;
+    }
+    .counter-info {
+        text-align: center;
+    }
+    /* .main-nav nav ul li {
         margin-right: 20px;
     }
     .hero-text h1 {
@@ -37,15 +56,39 @@
     }
     .footer-form form button {
         top: 78%;
-    }
+    } */
 }
 
 
 /* tablet */
 
 @media (min-width: 768px) and (max-width: 991px) {
+    /* topbar */
+    .top-navbar {
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+    /* main-menu */
+    .mobile-mt {
+        margin-top: 13px;
+    }
+    .main-menu-area {
+        padding: 10px 0px;
+    }
+    .logo h5 {
+        font-size: 28px;
+    }
     .mean-container {
         width: 100%;
+    }
+    /* hero */
+    .hero-area:hover .slick-next {
+        left: 1%;
+    }
+    .hero-area:hover .slick-prev {
+        right: 1%;
     }
     .hero-utility {
         padding: 150px 65px;
@@ -62,11 +105,29 @@
     .section-title h1 {
         font-size: 40px;
     }
-    .group-btn {
-        margin-top: 30px;
+    /* appointment */
+    .quote-and-presentation {
+        margin-top: -28%;
     }
-    .group-btn button {
-        font-size: 12px;
+    /* about */
+    .md-top-space {
+        margin-top: 60px;
+    }
+    #about {
+        margin-bottom: 0px;
+    }
+    /* service */
+    .service-box {
+        border-right: none;
+        margin: 20px 0 20px;
+    }
+    .service-page-two-padding {
+        padding-bottom: 19px;
+        margin-top: 0;
+    }
+    /* counter */
+    .responsive-margin-bottom {
+        margin-bottom: 20px;
     }
     .footer-title h3 {
         font-size: 14px;
@@ -77,16 +138,31 @@
 /* small mobile */
 
 @media (max-width: 767px) {
+    /* topbar */
+    .top-navbar {
+        display: none;
+    }
+    /* main-menu */
+    .search {
+        display: none;
+    }
+    .mobile-mt {
+        margin-top: 13px;
+    }
     .mean-container {
         width: 100%;
+    }
+    /* hero */
+    .hero-area:hover .slick-next {
+        opacity: 0;
+    }
+    .hero-area:hover .slick-prev {
+        opacity: 0;
     }
     .hero-utility {
         padding: 90px 25px;
     }
     .logo h5 {
-        font-size: 17px;
-    }
-    .logo h5 span {
         font-size: 28px;
     }
     .hero-text h1,
@@ -103,6 +179,50 @@
     }
     .section-title h1 {
         font-size: 32px;
+    }
+    /* appointment */
+    .quote-and-presentation {
+        margin-top: -82%;
+    }
+    .quote-box {
+        padding: 50px 20px;
+    }
+    /* about */
+    #about {
+        margin-bottom: 0px;
+    }
+    .abt-img::after {
+        right: 0;
+        bottom: 0;
+    }
+    .right-about {
+        padding: 60px 10px;
+    }
+    /* service */
+    #service {
+        padding: 60px 0;
+    }
+    .row-bg {
+        margin-top: 25px;
+    }
+    .service-box {
+        border-right: none;
+        margin: 20px 0 20px;
+    }
+    /* schedule */
+    .right-schedule {
+        margin-top: 0px;
+        justify-content: start;
+    }
+    .colorful-tab-content ul li {
+        width: 50%;
+    }
+    /* counter */
+    .counter {
+        margin: 0px;
+    }
+    .responsive-margin-bottom {
+        margin-bottom: 20px;
     }
     .group-btn {
         margin-top: 30px;
@@ -140,13 +260,20 @@
 /* large mobile */
 
 @media only screen and (min-width: 520px) and (max-width: 767px) {
+    /* topbar */
+    .top-navbar {
+        display: none;
+    }
+    .mobile-mt {
+        margin-top: 13px;
+    }
+    .search {
+        display: none;
+    }
     .mean-container {
         width: 100%;
     }
     .logo h5 {
-        font-size: 17px;
-    }
-    .logo h5 span {
         font-size: 28px;
     }
     .hero-utility {
@@ -166,21 +293,46 @@
     .single-slider-two {
         height: 570px;
     }
+    /* appointment */
+    .quote-and-presentation {
+        margin-top: -33%;
+    }
+    /* about */
+    #about {
+        margin-bottom: 0px;
+    }
+    /* counter */
+    .responsive-margin-bottom {
+        margin-bottom: 20px;
+    }
+    .md-top-space {
+        margin-top: 50px;
+    }
     .abt-img img {
         width: 100%;
     }
-    .abt-title h1 {
-        font-size: 36px;
+    .right-about {
+        padding: 60px 0;
     }
-    .section-title h1 {
-        font-size: 32px;
+    /* service */
+    .service-box {
+        border-right: none;
+        margin: 20px 0 20px;
     }
-    .group-btn {
+    /* schedule */
+    .schedule {
+        padding: 60px 0 60px;
+    }
+    .right-schedule {
         margin-top: 30px;
+        justify-content: start;
     }
-    .group-btn button {
-        font-size: 12px;
-        margin-bottom: 10px;
+    .colorful-tab-content ul li {
+        width: 33.3%;
+    }
+    /* counter */
+    .counter {
+        margin: 0px;
     }
     .portfolio-content {
         left: 11%;
