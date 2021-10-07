@@ -1239,10 +1239,49 @@ h5 {
 
 /* ############ Login Page ############# */
 
-.hero-login {
+.banner-login {
     background: url(../img/banner-1.jpg) no-repeat center center;
-    padding: 156px 0px 100px;
+    padding: 150px 0px 150px;
     background-size: cover;
+    position: relative;
+}
+
+.banner-login::before,
+.banner-register::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 61, 125, .7);
+    left: 0;
+    top: 0;
+}
+
+.banner-search h2 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.breadcrumb-container span a {
+    margin-right: 10px;
+}
+
+.breadcrumb-container span a:hover {
+    color: #fff;
+}
+
+.breadcrumb-container span.current {
+    margin-left: 5px;
+    color: #2B8FE5;
+    font-weight: 700;
 }
 
 .vendor-signup {
@@ -1255,30 +1294,44 @@ h5 {
 }
 
 .right-side {
-    background: #1A3D7D;
-    padding: 45px;
-    padding: 37px 40px;
+    /* padding: 45px;
+    padding: 37px 40px; */
+    padding: 50px 55px 55px;
+    -webkit-box-shadow: 0 0 30px rgb(51 51 51 / 10%);
+    box-shadow: 0 0 30px rgb(51 51 51 / 10%);
+    border-radius: 10px;
 }
 
-form .controls input,
-form .controls textarea {
-    background: none;
+.widget {
+    margin-bottom: 30px;
+}
+
+.widget h4 {
+    color: #1A3D7D;
+    font-weight: 700;
+    text-align: center;
+}
+
+form .controls input {
+    background: #eeee;
+    border-radius: 5px;
+    color: #1A3D7D;
     border: none;
-    color: #fff;
-    border-bottom: 1px solid #fff;
     width: 100%;
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
 .user-login-cta {
-    color: #fff;
+    color: #1A3D7D;
     margin-top: 30px;
     display: block;
 }
 
 .controls button {
     border: none;
+    width: 100%;
 }
 
 .user-login-cta a {
@@ -1288,24 +1341,64 @@ form .controls textarea {
 }
 
 
-/* .hero-login::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: #030520;
-    opacity: 0.5;
-    left: 0;
-    top: 0;
-} */
-
-
 /* ############ Register Page ############# */
 
-.hero-register {
+.banner-register {
     background: url('/img/banner-2.jpg') no-repeat center center;
-    padding: 156px 0px 100px;
+    padding: 150px 0px 150px;
     background-size: cover;
+    position: relative;
+}
+
+.register-left {
+    background: url('../img/register-img.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 313px 0;
+}
+
+
+/* .register-left img {
+    width: 100%;
+} */
+
+.right-side.register-right {
+    border-radius: 0;
+}
+
+.register-widget h4 {
+    text-align: left;
+}
+
+.nav-tabs {
+    border-bottom: 0
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+    background: #1A3D7D;
+    color: #fff;
+    font-size: 20px;
+    padding: 13px 34px;
+    width: 50%;
+    text-align: center;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #2B8FE5;
+}
+
+.tab-content {
+    margin-top: 25px;
+}
+
+.register-controls .form-group {
+    margin-bottom: 41px;
+}
+
+.register-controls .form-group input {
+    border-radius: 0;
 }
 
 
