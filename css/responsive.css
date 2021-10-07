@@ -132,6 +132,13 @@
     .footer-title h3 {
         font-size: 14px;
     }
+    /* appointment page */
+    .banner-search h2 {
+        font-size: 55px;
+    }
+    .booking-summary {
+        margin-top: 25px;
+    }
 }
 
 
@@ -254,6 +261,30 @@
         text-align: left;
         margin-top: 20px;
     }
+    /* appointment page */
+    .single-appointment {
+        padding: 100px 0;
+    }
+    .booking-summary {
+        margin-top: 25px;
+    }
+    /* appointment page */
+    .banner-search h2 {
+        font-size: 30px;
+    }
+    /* login page */
+    .right-side {
+        padding: 50px 20px;
+    }
+    .small-none {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .small-none {
+        display: none;
+    }
 }
 
 
@@ -351,5 +382,9 @@
     }
     .end {
         justify-content: start;
+    }
+    /* appointment page */
+    .banner-search h2 {
+        font-size: 40px;
     }
 }

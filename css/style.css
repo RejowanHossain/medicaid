@@ -1,7 +1,24 @@
-/* 
-Theme Name: IIDEA INFORMATICS
-Author: IIDEA INFORMATICS
-*/
+/*----------------------------------------------------------------------------------
+Project     :   MedicAid - Doctors website template
+-------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------------------
+[Table of contents]
+default css
+topbar area
+header area
+hero area
+appointment area
+about area
+service area
+schedule area
+counter area
+team area
+testimonial area
+blog area
+footer area
+--------------------------------------------------------------------------------------*/
 
 
 /* fonts */
@@ -192,7 +209,7 @@ h5 {
 
 .main-nav ul li {
     margin-right: 37px;
-    /* position: relative; */
+    position: relative;
 }
 
 .main-nav ul li:last-child {
@@ -234,6 +251,52 @@ h5 {
 .main-nav ul li.profile {
     margin-right: 20px;
 }
+
+
+/* ##### Submneu starts ######*/
+
+.submenu {
+    position: absolute;
+    z-index: 9999;
+    background: #fff;
+    width: 200px;
+    left: 0;
+    top: 111%;
+}
+
+.main-nav ul li ul.submenu {
+    display: block;
+    padding: 20px 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s linear all;
+}
+
+.main-nav ul li ul.submenu li {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.main-nav ul li ul.submenu li:last-child {
+    margin-bottom: 0;
+}
+
+.main-nav ul li ul.submenu li a {
+    padding: 0;
+}
+
+.main-nav ul li:hover ul.submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.main-nav ul li ul.submenu li a:hover {
+    color: #2B8FE5;
+}
+
+
+/* ##### Submenu Ends ####### */
 
 
 /* navbar ends */
@@ -1399,6 +1462,221 @@ form .controls input {
 
 .register-controls .form-group input {
     border-radius: 0;
+}
+
+
+/* ############ Appointment Page ############# */
+
+.single-appointment {
+    padding: 100px;
+}
+
+.single-appointment .quote-and-presentation {
+    margin-top: 0;
+}
+
+.appointment-counter {
+    margin: 0;
+}
+
+.list-payment {
+    display: flex;
+}
+
+.list-payment li {
+    margin-right: 15px;
+}
+
+.list-payment li:last-child {
+    margin-right: 0;
+}
+
+.list-payment li a {
+    font-size: 50px;
+}
+
+.list-payment svg.fa-cc-paypal {
+    color: #253b80;
+}
+
+.list-payment svg.fa-cc-visa {
+    color: #0066b2;
+}
+
+.list-payment svg.fa-cc-mastercard {
+    color: #36495d;
+}
+
+.list-payment svg.fa-cc-amex {
+    color: #006fcf;
+}
+
+.booking-summary {
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 5%);
+    color: #1A3D7D
+}
+
+.title-booking {
+    background: #1A3D7D;
+    padding: 20px 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+.title-booking .text-color-white {
+    color: #fff;
+    font-size: 20px;
+}
+
+.list-summary,
+.list-price {
+    padding: 20px 26px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.list-summary::after,
+.list-price::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #e8e8e8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.list-total li {
+    margin: 12px 0;
+}
+
+.list-summary li,
+.list-price li {
+    margin-bottom: 12px;
+}
+
+ul.date,
+ul.hours,
+ul.name-doctor,
+ul.price,
+ul.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.list-total {
+    padding: 0px 14px;
+}
+
+.box-btn .button {
+    width: 100%;
+    text-align: center;
+}
+
+ul.price.font-bold {
+    font-weight: 700;
+}
+
+
+/* ###### profile page  #######*/
+
+.box-wrap-details .title-heading {
+    color: #35434e;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 58px;
+    padding-bottom: 25px;
+    letter-spacing: -1px;
+}
+
+.box-wrap-details .sub-details {
+    font-size: 18px;
+    color: #565872;
+}
+
+.box-wrap-details p {
+    color: #565872;
+}
+
+.curriculum-vitae li {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 23px;
+    margin-bottom: 20px;
+}
+
+.curriculum-vitae li .sub-details {
+    width: 17.2%;
+}
+
+.box-wrap-details .sub-details {
+    font-size: 18px;
+    color: #565872;
+}
+
+.curriculum-vitae li p {
+    width: 82.8%;
+}
+
+.box-doctor-services {
+    float: left;
+    width: 48%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-right: 30px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 7%);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.box-doctor-services .box-icon {
+    width: 33.4%;
+    text-align: center;
+}
+
+.box-doctor-services .box-icon svg {
+    line-height: 125px;
+}
+
+.box-doctor-services .content-box {
+    width: 66.6%;
+    padding-right: 10px;
+}
+
+.box-awards-honours {
+    width: 31%;
+    margin-right: 33px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 7%);
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.box-icon {
+    color: #1A3D7D;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.box-awards-honours .box-icon svg {
+    font-size: 75px;
+}
+
+.box-awards-honours h4 {
+    font-weight: 500;
+    letter-spacing: -0.4px;
 }
 
 
