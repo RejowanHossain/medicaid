@@ -1468,7 +1468,7 @@ form .controls input {
 /* ############ Appointment Page ############# */
 
 .single-appointment {
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .single-appointment .quote-and-presentation {
@@ -1581,14 +1581,48 @@ ul.price.font-bold {
 }
 
 
-/* ###### profile page  #######*/
+/* ###### Appointment List Page  #######*/
+
+.table {
+    margin-bottom: 0;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #1A3D7D;
+    border-bottom: 4px solid #2B8FE5;
+}
+
+.list-btn.edit {
+    border: none;
+    color: #2B8FE5;
+    background: transparent;
+    font-size: 20px;
+}
+
+.list-btn.delete {
+    border: none;
+    color: #f03e56;
+    background: transparent;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+/* ###### doctor profile page  #######*/
+
+.profile-thumb .team-categories.profile-page-cat {
+    color: #1A3D7D;
+    font-weight: 600;
+    margin-top: 8px;
+}
 
 .box-wrap-details .title-heading {
     color: #35434e;
     font-size: 46px;
     font-weight: 700;
     line-height: 58px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     letter-spacing: -1px;
 }
 
@@ -1598,7 +1632,11 @@ ul.price.font-bold {
 }
 
 .box-wrap-details p {
-    color: #565872;
+    line-height: 1.8rem;
+}
+
+.curriculum-vitae {
+    margin-top: 25px;
 }
 
 .curriculum-vitae li {
@@ -1607,6 +1645,7 @@ ul.price.font-bold {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    align-items: center;
     border-bottom: 1px solid #D8D8D8;
     padding-bottom: 23px;
     margin-bottom: 20px;
@@ -1619,6 +1658,8 @@ ul.price.font-bold {
 .box-wrap-details .sub-details {
     font-size: 18px;
     color: #565872;
+    font-weight: 600;
+    margin-bottom: 7px;
 }
 
 .curriculum-vitae li p {
@@ -1677,6 +1718,37 @@ ul.price.font-bold {
 .box-awards-honours h4 {
     font-weight: 500;
     letter-spacing: -0.4px;
+}
+
+.doctor-schedule {
+    padding-top: 60px;
+}
+
+.doctor-profile-info {
+    padding-bottom: 0;
+}
+
+
+/* ####### Patient Profile Page */
+
+.patient-profile {
+    padding-bottom: 100px;
+}
+
+.patient-schedule {
+    padding-top: 0;
+}
+
+.space-patient {
+    margin-top: 30px;
+}
+
+.patient-info span {
+    margin-bottom: 7px;
+}
+
+.patient-info span:last-child {
+    margin-bottom: 0;
 }
 
 

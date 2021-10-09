@@ -108,14 +108,14 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="banner-search text-center">
-              <h2>Book Appointment</h2>
+              <h2>Patient Profile</h2>
             </div>
 
             <div class="breadcrumb-container">
               <span>
                 <a href="index.html">Home</a>
               </span>|
-              <span class="current"> Appointment</span>
+              <span class="current">Patient Profile</span>
             </div>
           </div>
         </div>
@@ -124,49 +124,207 @@
     <!-- apoointment banner ends-->
 
 
-    <!-- appointment starts -->
-    <div class="appointment single-appointment">
+    <!-- profile starts -->
+    <div class="appointment single-appointment doctor-profile-info patient-profile">
       <div class="container">
-        <div class="quote-and-presentation">
+        <div class="quote-and-presentation doctor-profile-container patient-profile-info">
           <div class="row">
-            <div class="col-lg-12 col-xl-8 col-md-12">
-              <div class="quote-box">
-                <div class="sec-title">
-                  <h3>Make appointment!</h3>
+            <div class="col-lg-4 col-xl-4 col-md-12 mb-4">
+              <div class="team style-16 profile-thumb">
+                <div class="team-thumb">
+                  <img src="/img/team-member-1.jpg" alt="Matthew Reyes">
                 </div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">name*</span>
-                      <i class="fas fa-file-signature"></i>
-                      <input type="text" name="name" placeholder="Ex: John Smith">
+                <div class="team-body">
+                  <h5>
+                    Ryan Dahl
+                  </h5>
+                  <div class="team-info patient-info">
+                    <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                        USA
+                    </span>
+
+                    <span>
+                    <i class="fas fa-envelope"></i>
+                        ryan@gmail.com
+                    </span>
+
+                    <span>
+                    <i class="fas fa-phone-alt"></i> 882 5478 99
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 col-xl-8 col-md-12">
+              <div class="schedule doctor-schedule patient-schedule" id="classes">
+                <div class="container">
+                  <div class="row ">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                      <div class="section-title mb-0">
+                        <h2>All Appointments</h2>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Email*</span>
-                      <i class="fas fa-envelope"></i>
-                      <input type="email" name="email" placeholder="Ex: smith@gmail.com">
+                  <div class="row space space-patient">
+                    <div class="col-md-12">
+                      <div class="colorful-tab-wrapper" id="colorful">
+                        <ul class="colorful-tab-menu">
+                          <li class="colorful-tab-menu-item active"><a href="#clr-0">Past</a></li>
+                          <li class="colorful-tab-menu-item"><a href="#clr-2">Upcoming</a></li>
+                        </ul>
+
+                        <div class="colorful-tab-container">
+
+                          <div class="colorful-tab-content active" id="clr-0">
+                            <div class="card">
+                              <div class="table-responsive">
+                                <table class="table ">
+                                  <thead class="thead-dark">
+                                    <tr>
+                                      <th scope="col">Serial</th>
+                                      <th scope="col">Doctor</th>
+                                      <th scope="col">Day</th>
+                                      <th scope="col">Date</th>
+                                      <th scope="col">Time</th>
+                                      <th scope="col">Action</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Mark Twain</td>
+                                      <td>Thursday</td>
+                                      <td>14-Sept-2021</td>
+                                      <td>11:00 AM - 11:30 AM</td>
+                                      <td>
+                                        <button class="list-btn delete"><i class="far fa-trash-alt"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Matthew Reyes </td>
+                                      <td>Friday</td>
+                                      <td>16-Sept-2021</td>
+                                      <td>12:00 AM - 12:30 AM</td>
+                                      <td>
+                                        <button class="list-btn delete"><i class="far fa-trash-alt"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td>Katherine Coopers</td>
+                                      <td>Sunday</td>
+                                      <td>18-Sept-2021</td>
+                                      <td>01:00 PM - 01:30 AM</td>
+                                      <td>
+                                        <button class="list-btn delete"><i class="far fa-trash-alt"></i></button>
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td>Mark Twain</td>
+                                      <td>Thursday</td>
+                                      <td>14-Sept-2021</td>
+                                      <td>11:00 AM - 11:30 AM</td>
+                                      <td>
+                                        <button class="list-btn delete"><i class="far fa-trash-alt"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">4</th>
+                                      <td>Matthew Reyes </td>
+                                      <td>Friday</td>
+                                      <td>16-Sept-2021</td>
+                                      <td>12:00 AM - 12:30 AM</td>
+                                      <td>
+                                        <button class="list-btn delete"><i class="far fa-trash-alt"></i></button>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">5</th>
+                                      <td>Katherine Coopers</td>
+                                      <td>Sunday</td>
+                                      <td>18-Sept-2021</td>
+                                      <td>01:00 PM - 01:30 AM</td>
+                                      <td>
+                                        <button class="list-btn delete"><i class="far fa-trash-alt"></i></button>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="colorful-tab-content" id="clr-2">
+
+                            <div class="card">
+                              <div class="table-responsive">
+                                <table class="table ">
+                                  <thead class="thead-dark">
+                                    <tr>
+                                      <th scope="col">Serial</th>
+                                      <th scope="col">Doctor</th>
+                                      <th scope="col">Day</th>
+                                      <th scope="col">Date</th>
+                                      <th scope="col">Time</th>
+                                      <th scope="col">Action</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Sarah Jackson</td>
+                                      <td>Thursday</td>
+                                      <td>14-Oct-2021</td>
+                                      <td>11:00 AM - 11:30 AM</td>
+                                      <td>
+                                        <button class="list-btn edit" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="far fa-edit"></i></button>
+                                        <button class="list-btn delete"><i class="far fa-trash-alt"></i></button>
+                                      </td>
+                                    </tr>
+
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Phone*</span>
-                      <i class="fas fa-phone"></i>
-                      <input type="tel" name="tel" placeholder="Ex: 998 021 2154">
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Location*</span>
-                      <i class="fas fa-map-marker-alt"></i>
-                      <input type="text" name="email" placeholder="Ex: 142, park street, new york">
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Doctors*</span>
-                      <select class="selectStyle">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- profile ends -->
+
+
+    <!-- Edit Appointment Modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="quote-box">
+            <div class="sec-title">
+              <h3>Edit appointment</h3>
+            </div>
+            <div class="row">
+
+              <div class="col-lg-6 col-md-6">
+                <div class="quote-item">
+                  <span class="lable">Doctors*</span>
+                  <select class="selectStyle">
                         <option value="0">Doctors</option>
                         <option value="1">Dr. Stephen Hawkings</option>
                         <option value="2">Dr. Phill Collins</option>
@@ -177,12 +335,13 @@
                         <option value="6">Dr. Scot Ian</option>
                         <option value="6">Dr. Nick Scott</option>
                       </select>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Departments*</span>
-                      <select class="selectStyle">
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6">
+                <div class="quote-item">
+                  <span class="lable">Departments*</span>
+                  <select class="selectStyle">
                         <option value="0">Departments</option>
                         <option value="1">hemathology</option>
                         <option value="2">neurology</option>
@@ -193,19 +352,21 @@
                         <option value="6">orthopedics</option>
                         <option value="6">radiology</option>
                       </select>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Select Date*</span>
-                      <i class="fas fa-calendar-day"></i>
-                      <input type="date" data-toggle="datepicker" placeholder="Select Date">
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Select Time*</span>
-                      <select class="selectStyle time">
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6">
+                <div class="quote-item">
+                  <span class="lable">Select Date*</span>
+                  <i class="fas fa-calendar-day"></i>
+                  <input type="date" data-toggle="datepicker" placeholder="Select Date">
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6">
+                <div class="quote-item">
+                  <span class="lable">Select Time*</span>
+                  <select class="selectStyle time">
                         <option value="0">10:00 AM</option>
                         <option value="1">10:30 AM</option>
                         <option value="2">11:00 AM</option>
@@ -230,220 +391,22 @@
                         <option value="6">09:30 PM</option>
                         <option value="6">10:00 PM</option>
                       </select>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="sec-title mt-2">
-                  <h3>Payment Information</h3>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Name on card*</span>
-                      <i class="fas fa-file-signature"></i>
-                      <input type="text" name="name" placeholder="Ex: John Smith">
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Card Number*</span>
-                      <i class="fas fa-credit-card"></i>
-                      <input type="text" name="number" placeholder="Ex: 1258 758 999">
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Expiration date*</span>
-                      <i class="fas fa-phone"></i>
-                      <input type="date" name="date">
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="quote-item">
-                      <span class="lable">Security code*</span>
-                      <i class="fas fa-map-marker-alt"></i>
-                      <input type="text" name="code" placeholder="CVV">
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <ul class="list-payment">
-                      <li>
-                        <a href="#">
-                          <i class="fab fa-cc-paypal"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fab fa-cc-visa""></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fab fa-cc-mastercard"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fab fa-cc-amex"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-
-
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-12 col-xl-4 xol-md-12">
-              <div class="booking-summary">
-                <div class="title-booking">
-                  <h4 class="text-color-white">Booking Summary</h4>
+              <div class="col-sm-12">
+                <div class="quote-item">
+                  <a class="button" href="appointment.html">Update appointment</a>
                 </div>
-
-                <ul class="list-summary">
-                  <li>
-                    <ul class="date">
-                      <li>
-                        Date
-                      </li>
-                      <li class="w-right">
-                        07/10/2020
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="hours">
-                      <li>
-                        Time
-                      </li>
-                      <li class="w-right">
-                        08:30 PM
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="name-doctor">
-                      <li>
-                        Doctor name
-                      </li>
-                      <li class="w-right">
-                        Dr. Beatrice Willis
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-
-                <ul class="list-price">
-                  <li>
-                    <ul class="price">
-                      <li>
-                        Sit etiam convallis
-                      </li>
-                      <li class="w-right">
-                        $80
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="price">
-                      <li>
-                        Curabitur praesent sed
-                      </li>
-                      <li class="w-right">
-                        $140
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-
-
-                <ul class="list-total font-bold">
-                  <li>
-                    <ul class="price font-bold">
-                      <li>
-                        Total
-                      </li>
-                      <li class="w-right">
-                        $500
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-
-                <div class="box-btn">
-                  <a href="#" class="button">
-                    <span>Confirm and Pay</span>
-                  </a>
-                </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- appointment ends -->
+    <!-- Edit Appointment Modal -->
 
 
-    <!-- counter area starts -->
-    <div class="counter appointment-counter">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-3 col-lg-3 col-md-6 responsive-margin-bottom">
-            <div class="single-counter">
-              <div class="counter-icon">
-                <i class="fas fa-user-md"></i>
-              </div>
-              <div class="counter-info">
-                <h5>98+</h5>
-                <span> Expert Doctors</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-3 col-md-6 responsive-margin-bottom">
-            <div class="single-counter">
-              <div class="counter-icon">
-                <i class="fas fa-stethoscope"></i>
-              </div>
-              <div class="counter-info">
-                <h5>100+</h5>
-                <span>Happy Patients</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-3 col-md-6 responsive-margin-bottom">
-            <div class="single-counter">
-              <div class="counter-icon">
-                <i class="fas fa-code-branch"></i>
-              </div>
-              <div class="counter-info">
-                <h5>50+</h5>
-                <span>Total Branches</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-3 col-md-6 responsive-margin-bottom">
-            <div class="single-counter">
-              <div class="counter-icon">
-                <i class="fas fa-star-of-life"></i>
-              </div>
-              <div class="counter-info">
-                <h5>100%</h5>
-                <span>Satisfaction</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- counter area ends -->
 
 
     <!-- Footer area starts -->
@@ -562,6 +525,7 @@
     <script src="js/fontawesome.min.js"></script>
     <script src="js/jquery.nice-select.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/colorfulTab.min.js"></script>

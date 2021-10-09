@@ -13,6 +13,28 @@ $(document).ready(function() {
         searchContainer.removeClass('search-active');
     })
 
+    // delete confirmation popup
+
+    $('.delete').on('click', function() {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#2B8FE5',
+            cancelButtonColor: '#f03e56',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+            }
+        })
+    })
+
 
 
     // hero video popup
