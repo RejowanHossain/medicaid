@@ -298,7 +298,7 @@
               </div>
             </div>
 
-            <div class="col-lg-12 col-xl-4 xol-md-12">
+            <div class="col-lg-12 col-xl-4 col-md-12">
               <div class="booking-summary">
                 <div class="title-booking">
                   <h4 class="text-color-white">Booking Summary</h4>
@@ -374,7 +374,7 @@
                   </li>
                 </ul>
 
-                <div class="box-btn">
+                <div class="box-btn" data-toggle="modal" data-target="#exampleModalCenter">
                   <a href="#" class="button">
                     <span>Confirm and Pay</span>
                   </a>
@@ -388,6 +388,29 @@
     </div>
     <!-- appointment ends -->
 
+    <!-- qr code pop starts -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Get The QR Code</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="qrcode">
+              <img src="img/qr-code.png" alt="qrcode">
+            </div>
+          </div>
+          <div class="modal-footer qr-code-modal">
+            <button type="button" class="button later" data-dismiss="modal">Later</button>
+            <button type="button" class="button">Print</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- qr code pop up ends -->
 
     <!-- counter area starts -->
     <div class="counter appointment-counter">
@@ -542,7 +565,37 @@
     <!-- search element starts -->
     <div class="search-box" id="searchContainer">
       <form>
-        <input type="search" placeholder="Search Here.....">
+        <div class="form-row">
+          <div class="col-lg-3 col-xl-3 col-md-12 mb-4">
+            <input type="search" placeholder="Search Here.....">
+          </div>
+          <div class="col-lg-3  col-xl-3 col-md-12 mb-4">
+            <select name="cat" id="cat" class="custom-select selectStyle">
+              <option value="Arthopedics">Arthopedics</option>
+              <option value="Neurology">Neurology</option>
+              <option value="Urology">Urology</option>
+              <option value="Gynocology">Gynocology</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3  col-xl-3 col-md-12 mb-4">
+            <select name="disease" id="disease" class="custom-select selectStyle">
+              <option value="Hemorrage">Hemorrage</option>
+              <option value="Ulcer">Ulcer</option>
+              <option value="Cold">Cold</option>
+              <option value="Gastric">Gastric</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3  col-xl-3 col-md-12 mb-4">
+            <select name="location" id="location" class="custom-select selectStyle">
+              <option value="volvo">USA</option>
+              <option value="saab">Hong Kong</option>
+              <option value="mercedes">England</option>
+              <option value="audi">Germany</option>
+            </select>
+          </div>
+        </div>
         <button type="submit"><i class="fas fa-search"></i></button>
       </form>
       <span class="search-box-icon exit" id="searchClose"><i class="fas fa-times"></i></span>
@@ -553,6 +606,7 @@
       <i class="fas fa-chevron-up"></i>
     </div>
     <!-- scrolltop btn-->
+
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/slick.min.js"></script>

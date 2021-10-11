@@ -308,8 +308,6 @@ footer area
         top: 0;
         left: 0;
         background: rgba(26, 61, 125, .5)
-        /* background: #0b0c26;
-    opacity: .5; */
     }
     
     .hero-caption h1 span {
@@ -495,7 +493,8 @@ footer area
         color: #1A3D7D;
     }
     
-    .quote-box .quote-item input {
+    .quote-box .quote-item input,
+    .quote-box .quote-item textarea {
         border: 2px solid #F9F9F9;
         padding: 12px;
         width: 100%;
@@ -1518,9 +1517,9 @@ footer area
         border-bottom: 4px solid #2B8FE5;
     }
     
-    .list-btn.edit {
+    .list-btn.scan {
         border: none;
-        color: #2B8FE5;
+        color: #1A3D7D;
         background: transparent;
         font-size: 20px;
     }
@@ -1531,6 +1530,14 @@ footer area
         background: transparent;
         font-size: 20px;
         margin-left: 10px;
+    }
+    
+    .list-btn.watch {
+        margin-left: 10px;
+        border: none;
+        color: #2B8FE5;
+        background: transparent;
+        font-size: 20px;
     }
     /* ###### doctor profile page  #######*/
     
@@ -1968,6 +1975,57 @@ footer area
         color: #2B8FE5;
         font-size: 13px;
     }
+    /* ###### QR CODE STARTS ####### */
+    
+    .qrcode {
+        width: 100%;
+    }
+    
+    .qrcode img {
+        width: 100%;
+    }
+    
+    .qr-code-modal .button {
+        border: none;
+        padding: 15px 30px;
+    }
+    
+    .qr-code-modal .button.later {
+        background: #848E9F;
+    }
+    /* ###### QR CODE ENDS  #######*/
+    /* ##### Watch Appointment ##### */
+    
+    .download-prescription {
+        margin-bottom: 15px;
+    }
+    
+    .download-prescription:last-child {
+        margin-bottom: 0;
+    }
+    
+    .download-prescription span {
+        background: #1A3D7D;
+        border-radius: 5px;
+        padding: 15px 20px;
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+        position: relative;
+    }
+    
+    .quote-box .quote-item .download-prescription span svg {
+        top: 19px;
+        color: #fff;
+    }
+    /* ##### Watch Appointment ##### */
+    /* #### ABOUT PAGE #####*/
+    
+    .mb-0 {
+        margin-bottom: 0;
+    }
+    /* #### ABOUT PAGE ##### */
     /* mobile menu */
     
     .mean-container a.meanmenu-reveal {
@@ -2003,16 +2061,22 @@ footer area
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         width: 85%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-box form .form-row {
+        width: 100%;
     }
     
     .search-box form input {
         background-color: transparent;
         width: 100%;
-        padding: 10px 0;
         font-size: 24px;
         color: #FFF;
         border: 0;
         border-bottom: 1px solid #FFF;
+        margin-top: 5px;
     }
     
     .search-box form button {
@@ -2040,6 +2104,25 @@ footer area
     
     .search-active {
         display: block;
+    }
+    
+    .custom-select {
+        background: none;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #FFF;
+    }
+    
+    .custom-select.selectStyle.nice-select.open .list {
+        width: 100%;
+        border-radius: 0;
+        color: #1A3D7D;
+    }
+    
+    .custom-select.selectStyle.nice-select span.current {
+        color: #fff;
+        font-size: 24px;
     }
     /* scroll top btn */
     
