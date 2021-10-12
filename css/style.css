@@ -2056,6 +2056,7 @@ footer area
         background-color: rgb(26 61 125 / 90%);
         z-index: 1040;
         display: none;
+        z-index: 99999999;
     }
     
     .search-box form {
