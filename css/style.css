@@ -1235,7 +1235,7 @@ footer area
     /* ############ Login Page ############# */
     
     .banner-login {
-        background: url(../img/banner-1.jpg) no-repeat center center;
+        background: url('../img/banner-1.jpg') no-repeat center center;
         padding: 150px 0px 150px;
         background-size: cover;
         position: relative;
@@ -1289,8 +1289,6 @@ footer area
     }
     
     .right-side {
-        /* padding: 45px;
-    padding: 37px 40px; */
         padding: 50px 55px 55px;
         -webkit-box-shadow: 0 0 30px rgb(51 51 51 / 10%);
         box-shadow: 0 0 30px rgb(51 51 51 / 10%);
@@ -1337,8 +1335,8 @@ footer area
     /* ############ Register Page ############# */
     
     .banner-register {
-        background: url('/img/banner-2.jpg') no-repeat center center;
-        padding: 150px 0px 150px;
+        background: url('../img/banner-2.jpg') no-repeat center center;
+        padding: 100px 0px 100px;
         background-size: cover;
         position: relative;
     }
@@ -1515,6 +1513,13 @@ footer area
         color: #fff;
         background-color: #1A3D7D;
         border-bottom: 4px solid #2B8FE5;
+    }
+    
+    .list-btn.edit {
+        border: none;
+        color: #2B8FE5;
+        background: transparent;
+        font-size: 20px;
     }
     
     .list-btn.scan {
