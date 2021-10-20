@@ -2,8 +2,6 @@ $(document).ready(function() {
     //   "use strict";
 
 
-
-
     // search overlay toggle
     let searchContainer = $('#searchContainer');
     let searchBtn = $('#searchBtn');
